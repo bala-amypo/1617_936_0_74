@@ -1,6 +1,6 @@
 package com.example.demo.entity;
 
-
+import java.sql.Date;
 
 @Entity
 public class studentEntity{
@@ -9,5 +9,20 @@ public class studentEntity{
     private String email;
     private String password;
     private Date createAt;
-    public 
+    public void setId(Integer id){
+        this.id=id;
+    }
+    public void setUsername(String username){
+        this.username=username;
+    }
+    public void setEmail(String email){
+        this.email=email;
+    }
+    public void setPassword(String password){
+        this.password=password
+    }
+    public void setCreateAt(Date createAt){
+        this.createAt=createAt;
+    }
+    public
 }
