@@ -11,8 +11,7 @@ public class studentServiceImpl implements studentService{
     @Autowired studentRepository student
     //save(),findAll(),findById(),deleteById(),existsById()
     public studentEntity postData(studentEntity stu){
-        student.
-        return stu;
+        return student.save(stu);
     }
 
 }
