@@ -1,4 +1,8 @@
 package com.example.demo.repository;
-public class studentRepository{
+
+import jakarta.persistence.Repository;
+
+@Repository
+public interface studentRepository extends JpaRepository{
     
 }
