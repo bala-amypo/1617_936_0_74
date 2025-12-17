@@ -47,6 +47,6 @@ public class studentEntity{
         this.username=username;
         this.email=email;
         this.password=password;
-        this.createaAt=createaAt;0
+        this.createaAt=createaAt;
     }
 }
