@@ -25,7 +25,7 @@ public class studentEntity{
         this.email=email;
     }
     public void setPassword(String password){
-        this.password=password
+        this.password=password;
     }
     public void setCreateAt(Date createAt){
         this.createAt=createAt;
