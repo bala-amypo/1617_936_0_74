@@ -24,5 +24,19 @@ public class studentEntity{
     public void setCreateAt(Date createAt){
         this.createAt=createAt;
     }
-    public
+    public Integer getId(){
+        return this.id;
+    }
+    public String getUsername(){
+        return this.username;
+    }
+    public String getEmail(){
+        return this.email;
+    }
+    public String getPassword(){
+        return this.password;
+    }
+    public Date getCreateAt(){
+        return this.createAt;
+    }
 }
