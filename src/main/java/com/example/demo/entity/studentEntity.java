@@ -39,4 +39,10 @@ public class studentEntity{
     public Date getCreateAt(){
         return this.createAt;
     }
+    public studentEntity(){
+
+    }
+    public studentEntity(Integer id,String username,String email,String password,Date createaAt){
+        00000000000000000000000000000000000
+    }
 }
