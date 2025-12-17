@@ -1,3 +1,5 @@
 package com.example.demo.service;
 
-public interface ser
+public interface studentService{
+    studentEntity 
+}
