@@ -6,4 +6,6 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class studentController{
     @Autowired studentService serv;
+    @PostMapping("/stupost")
+    public studentEntity postValue()
 }
