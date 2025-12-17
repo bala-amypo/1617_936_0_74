@@ -4,10 +4,10 @@ import org.springframework.stereotype.Service;
 
 @Service 
 public class studentServiceImpl implements studentService{
-    
-    public studentEntity postData(studentEntity student){
+    @Autowired studentRepository student
+    public studentEntity postData(studentEntity stu){
         stud
-        return student;
+        return stu;
     }
 
 }
