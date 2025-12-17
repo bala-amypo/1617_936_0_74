@@ -10,9 +10,9 @@ import com.example.demo.entity.studentEntity;
 
 @RestController
 public class studentController{
-    @Autowired studentService serv;
+    @Autowired studentService ser;
     @PostMapping("/stupost")
     public studentEntity sendData(@RequestBody studentEntity stu){
-        return serv.postData(stu);
+        return ser.postData(stu);
     }
 }
