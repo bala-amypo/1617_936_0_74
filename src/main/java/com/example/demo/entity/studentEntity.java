@@ -25,24 +25,28 @@ public class studentEntity{
         this.createAt=createAt;
     }
     public Integer getId(){
-        return this.id;
+        return id;
     }
     public String getUsername(){
-        return this.username;
+        return username;
     }
     public String getEmail(){
-        return this.email;
+        return email;
     }
     public String getPassword(){
-        return this.password;
+        return password;
     }
     public Date getCreateAt(){
-        return this.createAt;
+        return createAt;
     }
     public studentEntity(){
 
     }
     public studentEntity(Integer id,String username,String email,String password,Date createaAt){
-        00000000000000000000000000000000000
+        this.id=id;
+        this.username=username;
+        this.email=email;
+        this.password=password;
+        this.createaAt=createaAt;0
     }
 }
