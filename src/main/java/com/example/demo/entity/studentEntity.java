@@ -1,9 +1,12 @@
 package com.example.demo.entity;
 
 import java.sql.Date;
+import jakarta.persistence.Entity;
+import jakarta.persistence.id
 
 @Entity
 public class studentEntity{
+    @Id
     private Integer id;
     private String username;
     private String email;
