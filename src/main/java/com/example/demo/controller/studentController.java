@@ -24,12 +24,12 @@ public class studentController{
     public List<studentEntity> getData(){
         return ser.getAllData();
     }
-    @PutMapping("/stuput/{id}")
-    public studentEntity putData(@PathVariable Integer id,@RequestBody studentEntity stu){
-        return ser.putValue(id,stu);
-    }
-    // @DeleteMapping("/studelete/{id}")
-    // public String deleteData(@PathVariable Integer id){
-    //     return ser.deleteValue(id);
+    // @PutMapping("/stuput/{id}")
+    // public studentEntity putData(@RequestBody studentEntity stu){
+    //     return ser.putValue(stu);
     // }
+    @DeleteMapping("/studelete/{id}")
+    public String deleteData(@PathVariable Integer id){
+        return ser.deleteValue(id);
+    }
 }

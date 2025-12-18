@@ -7,6 +7,6 @@ import java.util.List;
 public interface studentService{
     studentEntity postData(studentEntity stu);
     List<studentEntity> getAllData();
-    studentEntity putValue(Integer id,studentEntity stu);
-    // String deleteValue(Integer id);
+    // studentEntity putValue(studentEntity stu);
+    String deleteValue(Integer id);
 }
