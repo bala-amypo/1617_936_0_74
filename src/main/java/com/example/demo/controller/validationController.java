@@ -20,20 +20,20 @@ public class validationController{
     public validationEntity sendData(@RequestBody validationEntity val){
         return ser.postData(val);
     }
-    @GetMapping("/valget")
-    public List<validationEntity> getData(){
-        return ser.getAllData();
-    }
-    @DeleteMapping("/valdelete/{id}")
-    public String deleteData(@PathVariable Long id){
-         return ser.deleteValue(id);
-    }
-    @GetMapping("/validget/{id}")
-    public validationEntity getOne(@PathVariable Long id){
-        return ser.getById(id);
-    }
-    @PutMapping("/valput/{id}")
-    public validationEntity putData(@PathVariable Long id,@RequestBody ValidationEntity val){
-        return ser.updateData(id,val);
-    }
+    // @GetMapping("/valget")
+    // public List<validationEntity> getData(){
+    //     return ser.getAllData();
+    // }
+    // @DeleteMapping("/valdelete/{id}")
+    // public String deleteData(@PathVariable Long id){
+    //      return ser.deleteValue(id);
+    // }
+    // @GetMapping("/validget/{id}")
+    // public validationEntity getOne(@PathVariable Long id){
+    //     return ser.getById(id);
+    // }
+    // @PutMapping("/valput/{id}")
+    // public validationEntity putData(@PathVariable Long id,@RequestBody ValidationEntity val){
+    //     return ser.updateData(id,val);
+    // }
 }
