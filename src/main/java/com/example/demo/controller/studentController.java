@@ -20,7 +20,7 @@ public class studentController{
     }
     @GetMapping("/stuget")
     public List<studentEntity> getData(){
-        return ser.getValue();
+        return ser.getAllData();
     }
     @PutMapping("/stuput/{id}")
     public studentEntity putData(@PathVariable Integer id,@requestBody studentEntity stu){
