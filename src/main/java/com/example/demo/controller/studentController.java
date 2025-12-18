@@ -5,6 +5,8 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.DeleteMapping;
 import com.example.demo.service.studentService;
 import com.example.demo.entity.studentEntity;
 
@@ -17,6 +19,15 @@ public class studentController{
         return ser.postData(stu);
     }
     @GetMapping("/stuget")
-    @PutMapping("/stuput")
+    public List<studentEntity> getData(){
+        return ser.getValue();
+    }
+    @PutMapping("/stuput/{id}")
+    public studentEntity putData(@PathVariable Integer id,@requestBody studentEntity stu){
+        return ser.putValue(id,stu);
+    }
     @DeleteMapping("/studelete")
+    public String deleteData(@PathVariable Integer id){
+        return ser.deleteValue()
+    }
 }
