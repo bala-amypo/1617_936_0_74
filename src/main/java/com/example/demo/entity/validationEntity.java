@@ -22,7 +22,7 @@ public class validationEntity{
     private String Username;
     @Email(message="Email is not valid")
     private String email;
-    @Max(6)
+    @Size(min=3,max=6)
     @NotNull(message="Password is mandatory")
     private String password;
     @NotNull
