@@ -28,6 +28,10 @@ public class studentController{
     public String deleteData(@PathVariable Integer id){
          return ser.deleteValue(id);
     }
+    @GetMapping("/idget")
+    public studentEntity getOne(@PathVariable Integer id){
+        return ser.getById(id);
+    }
     // @PutMapping("/stuput/{id}")
     // public studentEntity putData(@RequestBody studentEntity stu){
     //     return ser.putValue(stu);
