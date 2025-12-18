@@ -31,6 +31,8 @@ public class studentServiceImpl implements studentService{
     }
     @Override
     public studentEntity updateData(Integer id,studentEntity stu){
-        return student.
+        if(student.existsById(id)){
+            return student.
+        }
     }
 }
