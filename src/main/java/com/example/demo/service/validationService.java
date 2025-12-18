@@ -9,6 +9,6 @@ public interface validationService{
     List<validationEntity> getAllData();
     String deleteValue(Long id);
     validationEntity getById(Long id);
-    validationEntity updateData(Integer id,studentEntity stu);
+    validationEntity updateData(Long id,validationEntity val);
     
 }
