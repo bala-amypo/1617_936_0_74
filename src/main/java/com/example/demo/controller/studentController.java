@@ -29,7 +29,7 @@ public class studentController{
          return ser.deleteValue(id);
     }
     @GetMapping("/idget/{id}")
-    public studentEntity getOne(@PathVariable Integer id){
+    public List<studentEntity> getOne(@PathVariable Integer id){
         return ser.getById(id);
     }
     // @PutMapping("/stuput/{id}")
