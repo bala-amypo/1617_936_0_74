@@ -19,13 +19,13 @@ public class validationEntity{
     private Long id;
     @NotNull
     @Size(min=2,max=10,message="must be 2 to 10 characters")
-    private String Username;
+    private String username;
     @Email(message="Email is not valid")
     private String email;
     @Size(min=3,max=6,message="must be 3 to 6 characters")
     @NotNull(message="Password is mandatory")
     private String password;
-    @Positve(message="Age must be a positive number")
+    @Positive(message="Age must be a positive number")
     @Max(30)
     private int age;
     public void setId(Long id){
@@ -65,7 +65,7 @@ public class validationEntity{
         @NotNull @Size(min=2,max=10,message="must be 2 to 10 characters") String username,
         @Email(message="Email is not valid")  String email,
         @Size(min=3,max=6,message="must be 3 to 6 characters") @NotNull(message="Password is mandatory")String password,
-        @Positve(message="Age must be a positive number") @Max(30)int age){
+        @Positive(message="Age must be a positive number") @Max(30)int age){
         this.id=id;
         this.username=username;
         this.email=email;
