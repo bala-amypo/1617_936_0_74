@@ -29,7 +29,10 @@ public class studentServiceImpl implements studentService{
     public studentEntity getById(Integer id){
         return student.findById(id).orElse(null);
     }
-    // @Override
+    @Override
+    public studentEntity putValue(Integer id,studentEntity stu){
+        
+    }
     // public studentEntity putValue(studentEntity stu){
     //     return student.save(stu);
     // }
