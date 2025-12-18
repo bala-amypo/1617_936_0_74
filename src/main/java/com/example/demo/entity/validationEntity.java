@@ -58,7 +58,7 @@ public class validationEntity{
     public Date getAge(){
         return age;
     }
-    public studentEntity(){
+    public validationEntity(){
 
     }
     public validationEntity(Long id,
