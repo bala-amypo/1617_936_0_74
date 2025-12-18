@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import com.example.demo.service.studentService;
 import com.example.demo.entity.studentEntity;
+import java.util.List;
 
 
 @RestController
