@@ -30,11 +30,7 @@ public class studentServiceImpl implements studentService{
         return student.findById(id).orElse(null);
     }
     @Override
-    public studentEntity putValue(Integer id,studentEntity stu){
-        
+    public studentEntity updateData(Integer id,studentEntity stu){
+        return student.
     }
-    // public studentEntity putValue(studentEntity stu){
-    //     return student.save(stu);
-    // }
-
 }
