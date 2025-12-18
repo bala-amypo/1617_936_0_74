@@ -64,13 +64,14 @@ public class validationEntity{
     }
     public validationEntity(Long id,
         @NotNull @Size(min=2,max=10,message="must be 2 to 10 characters") String username,
-        @EmailString email,
-        String password,
-        Date createaAt){
+        @Email(message="Email is not valid")  String email,
+        @Size(min=3,max=6) @NotNull(message="Password is mandatory")String password,
+        @NotNull @Positve @Max(30)int age){
         this.id=id;
         this.username=username;
         this.email=email;
         this.password=password;
         this.age=age;
     }
+
 }
