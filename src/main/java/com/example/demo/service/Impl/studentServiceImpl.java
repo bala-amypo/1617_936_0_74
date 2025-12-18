@@ -20,10 +20,10 @@ public class studentServiceImpl implements studentService{
     public List<studentEntity> getAllData(){
         return student.findAll();
     }
-    // @Override
-    // public studentEntity putValue(Integer id,studentEntity stu){
-    //     return student.save(id,stu);
-    // }
+    @Override
+    public studentEntity putValue(Integer id,studentEntity stu){
+        return student.save(id,stu);
+    }
     // @Override
     // public String deleteValue(Integer id){
     //     return student.deleteById(id);
