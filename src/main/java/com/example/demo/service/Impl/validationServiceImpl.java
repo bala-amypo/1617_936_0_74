@@ -25,10 +25,10 @@ public class validationServiceImpl implements validationService{
     //     valid.deleteById(id);
     //     return "Deleted Successfully";
     // }
-    // @Override
-    // public validationEntity getById(Long id){
-    //     return valid.findById(id).orElse(null);
-    // }
+    @Override
+    public validationEntity getById(Long id){
+        return valid.findById(id).orElse(null);
+    }
     // @Override
     // public validationEntity updateData(Long id,validationEntity val){
     //     if(valid.existsById(id)){
