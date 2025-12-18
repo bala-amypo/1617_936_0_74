@@ -10,4 +10,5 @@ public interface studentService{
     String deleteValue(Integer id);
     studentEntity getById(Integer id);
     studentEntity updateData(Integer id,studentEntity stu);
+    
 }
