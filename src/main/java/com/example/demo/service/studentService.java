@@ -8,5 +8,5 @@ public interface studentService{
     studentEntity postData(studentEntity stu);
     List<studentEntity> getAllData();
     // studentEntity putValue(studentEntity stu);
-    studentEntity deleteValue(Integer id);
+    String deleteValue(Integer id);
 }
