@@ -40,7 +40,7 @@ public class validationEntity{
     public void setPassword(String password){
         this.password=password;
     }
-    public void setAge(Date age){
+    public void setAge(int age){
         this.age=age;
     }
     public Integer getId(){
@@ -55,7 +55,7 @@ public class validationEntity{
     public String getPassword(){
         return password;
     }
-    public Date getAge(){
+    public int getAge(){
         return age;
     }
     public validationEntity(){
