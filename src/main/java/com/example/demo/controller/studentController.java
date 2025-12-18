@@ -29,7 +29,7 @@ public class studentController{
     //     return ser.putValue(stu);
     // }
     @DeleteMapping("/studelete/{id}")
-    public String deleteData(@PathVariable Integer id){
+    public studentEntity deleteData(@PathVariable Integer id){
         return ser.deleteValue(id);
     }
 }
