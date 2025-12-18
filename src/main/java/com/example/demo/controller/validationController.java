@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import com.example.demo.service.validationService;
 import com.example.demo.entity.validationEntity;
+import jakarta.validation.Valid;
 import java.util.List;
 
 
@@ -17,7 +18,7 @@ import java.util.List;
 public class validationController{
     @Autowired validationService ser;
     @PostMapping("/valpost")
-    public validationEntity sendData(@RequestBody validationEntity val){
+    public validationEntity sendData(@Valid @RequestBody validationEntity val){
         return ser.postData(val);
     }
     // @GetMapping("/valget")
