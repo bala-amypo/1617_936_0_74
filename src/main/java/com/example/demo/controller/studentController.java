@@ -26,8 +26,8 @@ public class studentController{
     public studentEntity putData(@PathVariable Integer id,@requestBody studentEntity stu){
         return ser.putValue(id,stu);
     }
-    @DeleteMapping("/studelete")
+    @DeleteMapping("/studelete/{id}")
     public String deleteData(@PathVariable Integer id){
-        return ser.deleteValue()
+        return ser.deleteValue(id);
     }
 }
