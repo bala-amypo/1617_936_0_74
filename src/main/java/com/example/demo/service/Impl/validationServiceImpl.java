@@ -21,19 +21,19 @@ public class validationServiceImpl implements validationService{
         return valid.findAll();
     }
     @Override
-    public String deleteValue(Integer id){
-        student.deleteById(id);
+    public String deleteValue(Long id){
+        valid.deleteById(id);
         return "Deleted Successfully";
     }
     @Override
-    public studentEntity getById(Integer id){
-        return student.findById(id).orElse(null);
+    public validationEntity getById(Long id){
+        return valid.findById(id).orElse(null);
     }
     @Override
-    public studentEntity updateData(Integer id,studentEntity stu){
-        if(student.existsById(id)){
-            stu.setId(id);
-            return student.save(stu);
+    public validationEntity updateData(Long id,validationEntity val){
+        if(valid.existsById(id)){
+            val.setId(id);
+            return valid.save(val);
         }
         return null;
     }
