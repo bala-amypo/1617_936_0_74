@@ -2,7 +2,7 @@ package com.example.demo.service.Impl;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import com.example.demo.entity.studentid;
+import com.example.demo.entity.studentidEntity;
 import com.example.demo.service.studentidService;
 import com.example.demo.repository.studentidRepository;
 import java.util.List;
@@ -13,7 +13,7 @@ public class studentidServiceImpl implements studentidService{
     @Autowired studentidRepository valid;
     //save(),findAll(),findById(),deleteById(),existsById()
     @Override
-    public studentid postData(studentid stuid){
+    public studentidEntity postData(studentidEntity stuid){
         return valid.save(stuid);
     }
     // @Override
