@@ -16,7 +16,7 @@ import java.util.List;
 @RestController
 public class idcardController{
     @Autowired idcardService ser;
-    @PostMapping("/onepost")
+    @PostMapping("/idonetoonepost")
     public idcardEntity sendData(@RequestBody idcardEntity idcard){
         return ser.postData(idcard);
     }
