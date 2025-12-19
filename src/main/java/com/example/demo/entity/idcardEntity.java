@@ -9,7 +9,6 @@ import lombok.Getter;
 import lombok.Setter;
 import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
-import java.time.LocalDateTime;
 @Entity
 @Data
 @Getter
@@ -19,7 +18,7 @@ import java.time.LocalDateTime;
 public class idcardEntity{
     @Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)
-    private Integer reg;
+    private Integer id;
     private String name;
     private String address;
 }
