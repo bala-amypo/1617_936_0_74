@@ -11,6 +11,7 @@ import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
 import java.time.LocalDateTime;
 import jakarta.persistence.Prepersist;
+import jakarta.persistence.PreUpdate;
 
 @Entity
 @Data
@@ -28,8 +29,12 @@ public class timestamp{
     private LocalDateTime updateAt;
     @Prepersist
     public void Oncreate(){
-        LocalDateTime now=new LocalDateTime();
+        LocalDateTime now=LocalDateTime().now();
         this.createAt=now;
         this.updateAt=now;
+    }
+    @PreUpdate
+    public void Onupdate(){
+        LocalDateTime now=L
     }
 }
