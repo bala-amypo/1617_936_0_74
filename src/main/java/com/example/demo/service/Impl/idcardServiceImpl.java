@@ -2,9 +2,9 @@ package com.example.demo.service.Impl;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import com.example.demo.entity.timestamp;
-import com.example.demo.service.timestampService;
-import com.example.demo.repository.timestampRepository;
+import com.example.demo.entity.idcard;
+import com.example.demo.service.idcardService;
+import com.example.demo.repository.idcardRepository;
 import java.util.List;
 
 
@@ -13,8 +13,8 @@ public class idcardServiceImpl implements idcardService{
     @Autowired idacardRepository valid;
     //save(),findAll(),findById(),deleteById(),existsById()
     @Override
-    public timestamp postData(timestamp stamp){
-        return valid.save(stamp);
+    public idcardEntity postData(idcardEntity idcard){
+        return valid.save(idcard);
     }
     // @Override
     // public List<validationEntity> getAllData(){
