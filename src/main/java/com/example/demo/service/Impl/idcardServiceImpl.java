@@ -10,7 +10,7 @@ import java.util.List;
 
 @Service 
 public class idcardServiceImpl implements idcardService{
-    @Autowired idacardRepository valid;
+    @Autowired idcardRepository valid;
     //save(),findAll(),findById(),deleteById(),existsById()
     @Override
     public idcardEntity postData(idcardEntity idcard){
