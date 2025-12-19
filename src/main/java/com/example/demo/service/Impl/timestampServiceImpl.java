@@ -10,11 +10,11 @@ import java.util.List;
 
 
 @Service 
-public class timestampServiceImpl implements validationService{
+public class timestampServiceImpl implements timestampService{
     @Autowired timestampRepository valid;
     //save(),findAll(),findById(),deleteById(),existsById()
     @Override
-    public validationEntity postData(validationEntity val){
+    public timestamp postData(timestamp stamp){
         return valid.save(val);
     }
     // @Override
