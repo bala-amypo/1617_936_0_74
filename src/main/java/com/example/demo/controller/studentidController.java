@@ -14,11 +14,11 @@ import java.util.List;
 
 
 @RestController
-public class timestampController{
-    @Autowired timestampService ser;
-    @PostMapping("/timepost")
-    public timestamp sendData(@RequestBody timestamp stamp){
-        return ser.postData(stamp);
+public class studentidController{
+    @Autowired studentidService ser;
+    @PostMapping("/stuidonetoonepost")
+    public timestamp sendData(@RequestBody studentid stuid){
+        return ser.postData(stuid);
     }
     // @GetMapping("/valget")
     // public List<validationEntity> getData(){
