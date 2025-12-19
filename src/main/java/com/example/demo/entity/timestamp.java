@@ -18,7 +18,6 @@ import jakarta.persistence.Prepersist;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-@Prepersist
 public class timestamp{
     @Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)
@@ -27,5 +26,10 @@ public class timestamp{
     private String email;
     private LocalDateTime createAt;
     private LocalDateTime updateAt;
-   
+    @Prepersist
+    public void Oncreate(){
+        LocalDateTime now=new LocalDateTime();
+        this.createAt=now;
+        this.updateAt=now;
+    }
 }
