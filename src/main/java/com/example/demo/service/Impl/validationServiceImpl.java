@@ -5,6 +5,7 @@ import org.springframework.stereotype.Service;
 import com.example.demo.entity.validationEntity;
 import com.example.demo.service.validationService;
 import com.example.demo.repository.validationRepository;
+import com.example.demo.exception.validationException;
 import java.util.List;
 
 
@@ -27,7 +28,7 @@ public class validationServiceImpl implements validationService{
     // }
     @Override
     public validationEntity getById(Long id){
-        return valid.findById(id).orElseThrow(()->new ValidationException("invalid Id"));
+        return valid.findById(id).orElseThrow(()->new validationException("invalid Id"));
     }
     // @Override
     // public validationEntity updateData(Long id,validationEntity val){
