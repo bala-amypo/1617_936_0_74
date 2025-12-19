@@ -21,4 +21,6 @@ public class idcardEntity{
     private Integer id;
     private int cardno;
     private int student_id;
+    @OneToOne
+    private 
 }
