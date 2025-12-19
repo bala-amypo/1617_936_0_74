@@ -14,7 +14,7 @@ public class timestampServiceImpl implements timestampService{
     //save(),findAll(),findById(),deleteById(),existsById()
     @Override
     public timestamp postData(timestamp stamp){
-        return valid.save(val);
+        return valid.save(stamp);
     }
     // @Override
     // public List<validationEntity> getAllData(){
