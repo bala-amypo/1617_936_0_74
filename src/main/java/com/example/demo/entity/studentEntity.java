@@ -23,10 +23,10 @@ public class studentEntity{
     private String email;
     private String password;
     private Date createAt;
-    public User() {
+    public studentEntity() {
     }
 
-    public User(Integer id, String username, String email, String password, Date createAt) {
+    public studentEntity(Integer id, String username, String email, String password, Date createAt) {
         this.id = id;
         this.username = username;
         this.email = email;
