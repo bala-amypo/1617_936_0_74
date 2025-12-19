@@ -2,19 +2,19 @@ package com.example.demo.service.Impl;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import com.example.demo.entity.timestamp;
-import com.example.demo.service.timestampService;
-import com.example.demo.repository.timestampRepository;
+import com.example.demo.entity.studentid;
+import com.example.demo.service.studentidService;
+import com.example.demo.repository.studentidRepository;
 import java.util.List;
 
 
 @Service 
-public class timestampServiceImpl implements timestampService{
-    @Autowired timestampRepository valid;
+public class studentidServiceImpl implements studentidService{
+    @Autowired studentidRepository valid;
     //save(),findAll(),findById(),deleteById(),existsById()
     @Override
-    public timestamp postData(timestamp stamp){
-        return valid.save(stamp);
+    public studentid postData(studentid stuid){
+        return valid.save(stuid);
     }
     // @Override
     // public List<validationEntity> getAllData(){
