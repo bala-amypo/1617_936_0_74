@@ -19,6 +19,6 @@ public class idcardEntity{
     @Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)
     private Integer id;
-    private String name;
-    private String address;
+    private int cardno;
+    private int student_id;
 }

@@ -19,6 +19,7 @@ public class studentidEntity{
     @Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)
     private Integer id;
-    private String dept;
-    private String clg;
+    private String name;
+    private String email;
+    private String address;
 }
