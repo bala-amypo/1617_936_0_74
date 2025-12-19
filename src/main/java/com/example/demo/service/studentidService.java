@@ -1,11 +1,11 @@
 package com.example.demo.service;
 
-import com.example.demo.entity.timestamp;
+import com.example.demo.entity.studentidEntity;
 import java.util.List;
 
 
-public interface timestampService{
-    timestamp postData(timestamp stamp);
+public interface studentidService{
+    studentidEntity postData(studentidEntity stuid);
     // List<validationEntity> getAllData();
     // String deleteValue(Long id);
     // timestamp getById(Long id);
