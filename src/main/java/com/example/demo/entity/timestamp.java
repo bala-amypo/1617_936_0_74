@@ -35,6 +35,7 @@ public class timestamp{
     }
     @PreUpdate
     public void Onupdate(){
-        LocalDateTime now=L
+        LocalDateTime now=LocalDateTime().now();
+        this.updateAt=now;
     }
 }
