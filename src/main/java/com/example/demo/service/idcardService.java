@@ -1,11 +1,11 @@
 package com.example.demo.service;
 
-import com.example.demo.entity.timestamp;
+import com.example.demo.entity.idcardEntity;
 import java.util.List;
 
 
-public interface timestampService{
-    timestamp postData(timestamp stamp);
+public interface idcardService{
+    idcardEntity postData(idcardEntity idcard);
     // List<validationEntity> getAllData();
     // String deleteValue(Long id);
     // timestamp getById(Long id);
