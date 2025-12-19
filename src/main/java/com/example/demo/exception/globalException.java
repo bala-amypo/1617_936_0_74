@@ -1,8 +1,9 @@
 package com.example.demo.exception;
 
-import org.springframework.web.bind.annotation.RestContollerAdvice;
+import org.springframework.web.bind.annotation.RestControllerAdvice;
+import org.springframework.web.bind.annotation.ExceptionHandler;
 
-@RestContollerAdvice
+@RestControllerAdvice
 public class globalException{
-
+    @ExceptionHandler(validationException.class)
 }
