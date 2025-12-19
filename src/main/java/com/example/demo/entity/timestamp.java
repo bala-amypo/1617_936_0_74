@@ -10,6 +10,7 @@ import lombok.Setter;
 import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
 import java.time.LocalDateTime;
+import jakarta.persistence.Prepersist;
 
 @Entity
 @Data
@@ -17,6 +18,7 @@ import java.time.LocalDateTime;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
+@Prepersist
 public class timestamp{
     @Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)
@@ -25,4 +27,5 @@ public class timestamp{
     private String email;
     private LocalDateTime createAt;
     private LocalDateTime updateAt;
+   
 }
