@@ -8,18 +8,17 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.DeleteMapping;
-import com.example.demo.service.validationService;
-import com.example.demo.entity.validationEntity;
-import jakarta.validation.Valid;
+import com.example.demo.service.timestampService;
+import com.example.demo.entity.timestamp;
 import java.util.List;
 
 
 @RestController
-public class validationController{
-    @Autowired validationService ser;
-    @PostMapping("/valpost")
-    public validationEntity sendData(@Valid @RequestBody validationEntity val){
-        return ser.postData(val);
+public class timestampController{
+    @Autowired timestampService ser;
+    @PostMapping("/timepost")
+    public timestamp sendData(@RequestBody timestamp stamp){
+        return ser.postData(stamp);
     }
     // @GetMapping("/valget")
     // public List<validationEntity> getData(){
