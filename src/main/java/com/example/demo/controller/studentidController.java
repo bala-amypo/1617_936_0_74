@@ -17,7 +17,7 @@ import java.util.List;
 public class studentidController{
     @Autowired studentidService ser;
     @PostMapping("/stuidonetoonepost")
-    public timestamp sendData(@RequestBody studentid stuid){
+    public student sendData(@RequestBody studentid stuid){
         return ser.postData(stuid);
     }
     // @GetMapping("/valget")
