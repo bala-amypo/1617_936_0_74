@@ -8,7 +8,7 @@ public interface timestampService{
     timestamp postData(timestamp stamp);
     // List<validationEntity> getAllData();
     // String deleteValue(Long id);
-    timestamp getById(Long id);
+    // timestamp getById(Long id);
     // validationEntity updateData(Long id,validationEntity val);
     
 }
