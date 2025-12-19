@@ -8,17 +8,17 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.DeleteMapping;
-import com.example.demo.service.timestampService;
-import com.example.demo.entity.timestamp;
+import com.example.demo.service.idcardService;
+import com.example.demo.entity.idcardEntity;
 import java.util.List;
 
 
 @RestController
-public class timestampController{
-    @Autowired timestampService ser;
-    @PostMapping("/timepost")
-    public timestamp sendData(@RequestBody timestamp stamp){
-        return ser.postData(stamp);
+public class idcardController{
+    @Autowired idcardService ser;
+    @PostMapping("/onepost")
+    public idcardEntity sendData(@RequestBody idcardEntity idcard){
+        return ser.postData(idcard);
     }
     // @GetMapping("/valget")
     // public List<validationEntity> getData(){
