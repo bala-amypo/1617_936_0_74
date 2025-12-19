@@ -12,10 +12,16 @@ import jakarta.validation.constraints.Positive;
 import lombok.Data;
 import lombok.Getter;
 import lombok.Setter;
-import 
+import lombok.AllArgsConstructor;
+import lombok.NoArgsConstructor;
 
 
 @Entity
+@Data
+@Getter
+@Setter
+@AllArgsConstructor
+@NoArgsConstructor
 public class validationEntity{
     @Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)
@@ -31,10 +37,4 @@ public class validationEntity{
     @Positive(message="Age must be a positive number")
     @Max(30)
     private int age;
-    @Data
-    @Getter
-    @Setter
-    @AllArgsConstructor
-    @NoArgsConstructor
-
 }
